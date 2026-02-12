@@ -1,0 +1,16 @@
+/* You can import this file into 'index.css' 
+  to make these colors available everywhere.
+*/
+
+:root {
+  --primary-color: #006400; /* Dark Green */
+  --primary-color-dark: #004d00;
+  --secondary-color: #2196f3; /* Blue */
+  --light-color: #ffffff;
+  --dark-color: #333333;
+  --grey-color: #f4f7f6;
+  --border-color: #dddddd;
+  --danger-color: #e53935; /* Red */
+  --success-color: #4caf50; /* Green */
+  --warning-color: #fbc02d; /* Yellow */
+}

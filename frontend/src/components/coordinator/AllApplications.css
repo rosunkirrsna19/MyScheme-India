@@ -1,0 +1,44 @@
+.all-apps-container h2 {
+  margin-top: 0;
+  color: #006400;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.dashboard-error {
+  color: #c62828;
+}
+
+/* We re-use .dashboard-table styles from PendingApplications.css */
+/* We just need to add the status badge styles */
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.status-badge.status-pending {
+  background-color: #fbc02d; /* Yellow */
+}
+.status-badge.status-approved {
+  background-color: #4caf50; /* Green */
+}
+.status-badge.status-rejected {
+  background-color: #e53935; /* Red */
+}

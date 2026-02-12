@@ -1,0 +1,12 @@
+.schemes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+.schemes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Min width 320px */
+  gap: 25px;
+  margin-top: 20px;
+}

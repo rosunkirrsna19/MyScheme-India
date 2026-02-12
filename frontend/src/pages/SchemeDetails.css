@@ -1,0 +1,183 @@
+.scheme-details-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.scheme-header {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.scheme-header h1 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.scheme-header .department {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
+}
+
+.scheme-header .badge {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 16px;
+  color: white;
+}
+
+.badge.government { background-color: #2196f3; }
+.badge.private { background-color: #4caf50; }
+
+.scheme-content {
+  display: flex;
+  gap: 25px;
+}
+
+.scheme-main {
+  flex: 2;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.scheme-main h3 {
+  color: #006400;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.scheme-main ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.scheme-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sidebar-card,
+.apply-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.sidebar-card h3,
+.apply-section h3 {
+  margin: 0 0 15px 0;
+  color: #006400;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+.sidebar-card ul {
+  padding-left: 20px;
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.btn-apply {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  display: block;
+}
+
+.btn-apply.government {
+  background-color: #2196f3;
+  color: white;
+}
+.btn-apply.government:hover { background-color: #1a78c2; }
+
+.btn-apply.private {
+  background-color: #4caf50;
+  color: white;
+}
+.btn-apply.private:hover:not(:disabled) { background-color: #3e8e41; }
+.btn-apply.private:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.message {
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #c62828;
+}
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+/* --- NEW STYLES FOR DYNAMIC FORM --- */
+.dynamic-apply-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.dynamic-apply-form .form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.dynamic-apply-form .form-group input,
+.dynamic-apply-form .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.dynamic-apply-form .file-input {
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.dynamic-apply-form .file-input::file-selector-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dynamic-apply-form .file-input::file-selector-button:hover {
+  background-color: #e0e0e0;
+}

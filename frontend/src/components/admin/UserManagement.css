@@ -1,0 +1,75 @@
+/* This uses dashboard-table styles from PendingApplications.css */
+/* We just add the specific styles for the <select> and delete button */
+
+.user-management-container h2 {
+  margin-top: 0;
+  color: #006400;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.dashboard-table select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  background-color: #fff;
+}
+
+.dashboard-table select:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.btn-delete {
+  background-color: #e53935; /* Red */
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-delete:hover:not(:disabled) {
+  background-color: #c62828;
+}
+
+.btn-delete:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+/* Add to UserManagement.css */
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit {
+  text-decoration: none;
+  background-color: #2196f3; /* Blue */
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+.btn-edit:hover {
+  background-color: #1a78c2;
+}
+
+/* Re-using status badges from ApplicationStatus.css */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.status-badge.status-government {
+  background-color: #2196f3; /* Blue */
+}
+.status-badge.status-private {
+  background-color: #4caf50; /* Green */
+}

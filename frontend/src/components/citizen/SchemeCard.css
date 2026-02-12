@@ -1,0 +1,151 @@
+.scheme-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scheme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  min-height: 80px;
+  position: relative; /* Make it a positioning context */
+}
+
+/* --- NEW STYLES FOR BADGE CONTAINER --- */
+.card-badges {
+  position: absolute; /* Position it in the top right */
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column; /* Stack the badges vertically */
+  align-items: flex-end; /* Align them to the right */
+  gap: 6px; /* Space between the badges */
+}
+
+.card-badge {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: white;
+  /* float: right; -- This is now removed */
+  text-transform: capitalize;
+}
+
+.card-badge.government {
+  background-color: #2196f3; /* Blue */
+}
+
+.card-badge.private {
+  background-color: #4caf50; /* Green */
+}
+
+/* Match Percentage Badges */
+.card-badge.match {
+  border: 1px solid;
+}
+.card-badge.match-100 {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-color: #2e7d32;
+}
+.card-badge.match-70 {
+  background-color: #fffde7;
+  color: #fbc02d;
+  border-color: #fbc02d;
+}
+.card-badge.match-40 {
+  background-color: #fff3e0;
+  color: #ef6c00;
+  border-color: #ef6c00;
+}
+.card-badge.match-0 {
+  background-color: #ffebee;
+  color: #c62828;
+  border-color: #c62828;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #333;
+  padding-right: 100px; /* Make space for the badges */
+}
+
+.card-department {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 5px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card-description {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fafafa;
+}
+
+.card-btn-save {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.card-btn-save.save {
+  background-color: #006400;
+  color: white;
+}
+.card-btn-save.save:hover:not(:disabled) {
+  background-color: #004d00;
+}
+
+.card-btn-save.unsave {
+  background-color: #e53935;
+  color: white;
+}
+.card-btn-save.unsave:hover:not(:disabled) {
+  background-color: #c62828;
+}
+
+.card-btn-save:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #006400;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.card-link:hover {
+  color: #004d00;
+}

@@ -1,0 +1,157 @@
+.scheme-form-container h2 {
+  margin-top: 0;
+  color: #006400;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.scheme-form {
+  max-width: 900px;
+}
+
+.scheme-form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  background: #fff;
+}
+
+.scheme-form legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  padding: 0 10px;
+}
+
+.fieldset-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group-inline {
+  display: flex;
+  gap: 20px;
+}
+.form-group-inline .form-group {
+  flex: 1;
+}
+
+.btn-submit {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #006400;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background-color: #004d00;
+}
+
+.btn-submit:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.dashboard-error {
+  color: #c62828;
+}
+
+/* --- NEW STYLES FOR FORM BUILDER --- */
+
+.form-builder-list .form-field-builder {
+  background: #f9f9f9;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-field-builder .form-group {
+  grid-column: 1 / -1; /* Make label and options full-width */
+}
+
+/* Put field type and actions on one line */
+.form-field-builder .form-group:nth-child(2) {
+  grid-column: 1 / 2;
+}
+.form-field-builder .field-actions {
+  grid-column: 2 / 3;
+  align-self: end;
+  justify-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px; /* Align with form group bottom margin */
+}
+
+.field-required-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.field-required-label input {
+  width: auto;
+}
+
+.btn-remove-field {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-remove-field:hover {
+  background: #c62828;
+}
+
+.btn-add-field {
+  background: #006400;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-add-field:hover {
+  background: #004d00;
+}

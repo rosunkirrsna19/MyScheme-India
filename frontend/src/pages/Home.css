@@ -1,0 +1,74 @@
+.home-container {
+  text-align: center;
+}
+
+.home-header {
+  background-color: #006400; /* Dark Green */
+  color: white;
+  padding: 60px 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.home-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.home-buttons .btn {
+  text-decoration: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.btn.btn-primary {
+  background-color: white;
+  color: #006400;
+  border: 2px solid white;
+}
+
+.btn.btn-primary:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.btn.btn-secondary {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btn.btn-secondary:hover {
+  background-color: white;
+  color: #006400;
+}
+
+.home-features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 30%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.feature-card h3 {
+  color: #006400;
+  margin-top: 0;
+}

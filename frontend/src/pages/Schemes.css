@@ -1,0 +1,62 @@
+.schemes-container {
+  width: 100%;
+}
+
+.schemes-container h1 {
+  color: #006400;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.schemes-error {
+  color: #c62828;
+  font-size: 1.2rem;
+}
+
+/* --- NEW CSS FOR FILTER BAR --- */
+.filter-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin-bottom: 30px;
+}
+
+.filter-search,
+.filter-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.filter-search:focus,
+.filter-select:focus {
+  outline: none;
+  border-color: #006400;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px rgba(0,100,0,0.1);
+}
+
+/* Responsive layout for filters */
+@media (max-width: 900px) {
+  .filter-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+  .filter-search {
+    grid-column: 1 / -1; /* Make search bar full width */
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-bar {
+    grid-template-columns: 1fr;
+  }
+}
+/* --- END OF NEW CSS --- */

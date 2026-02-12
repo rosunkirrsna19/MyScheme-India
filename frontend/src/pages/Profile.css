@@ -1,0 +1,142 @@
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.password-form {
+  margin-top: 30px;
+}
+
+.profile-form h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #006400;
+}
+.profile-form p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.profile-form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  display: grid;
+  /* --- UPDATED: Use 3 columns --- */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* --- UPDATED: Make these fields span 2 columns --- */
+.profile-form fieldset .form-group:nth-child(1),
+.profile-form fieldset .form-group:nth-child(2) {
+  grid-column: span 1;
+}
+.profile-form fieldset .form-group:nth-child(5) {
+  grid-column: span 2;
+}
+.profile-form fieldset .form-group:nth-child(7) {
+  grid-column: span 2;
+}
+
+/* Make password fields single column */
+.password-form fieldset {
+  grid-template-columns: 1fr;
+}
+
+
+.profile-form legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  padding: 0 10px;
+  width: auto; /* Fix for legend layout */
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* --- NEW: Checkbox styles --- */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+}
+.checkbox-group label {
+  margin-bottom: 0;
+}
+.checkbox-group input {
+  width: auto;
+  height: 18px;
+  width: 18px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.profile-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #006400;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.profile-button:disabled {
+  background-color: #aaa;
+}
+.profile-button:hover:not(:disabled) {
+  background-color: #004d00;
+}
+
+.profile-message {
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.profile-message.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+.profile-message.error {
+  background-color: #ffebee;
+  color: #c62828;
+}

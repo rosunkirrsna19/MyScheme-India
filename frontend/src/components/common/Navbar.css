@@ -1,0 +1,88 @@
+.navbar {
+  background: #ffffff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* --- NEW STYLE FOR THE GROUP --- */
+.navbar-left-group {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #006400; /* Dark Green */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 15px; /* Add some space between logo and links */
+}
+
+.nav-menu-left,
+.nav-menu-right {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #006400;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-user {
+  padding-right: 1rem;
+  color: #555;
+}
+
+.nav-btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #006400;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.nav-btn-register {
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #006400;
+  color: #fff;
+}
+
+.nav-btn:hover,
+.nav-btn-register:hover {
+  background-color: #004d00;
+  transition: all 0.2s ease-out;
+}

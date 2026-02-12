@@ -1,0 +1,38 @@
+/* This re-uses styles from pages/ApplicationStatus.css */
+/* Add specific component styles here if needed */
+/* ... (keep all your existing CSS) ... */
+
+/* --- NEW CSS --- */
+
+/* New badge color for 'More Info Required' */
+.status-badge.status-more-info-required {
+  background-color: #fbc02d; /* Yellow */
+  color: #333; /* Darker text for readability */
+}
+
+/* Style for the notes cell */
+.notes-cell {
+  font-style: italic;
+  color: #555;
+  max-width: 300px;
+}
+
+/* Style for the action cell */
+.action-cell {
+  text-align: center;
+}
+
+.btn-resubmit {
+  text-decoration: none;
+  background-color: #006400;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-resubmit:hover {
+  background-color: #004d00;
+}

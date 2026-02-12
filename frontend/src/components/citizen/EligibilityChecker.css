@@ -1,0 +1,52 @@
+.checker-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 40px 0;
+  text-align: left;
+}
+
+.checker-container h3 {
+  text-align: center;
+  color: #006400;
+  margin-top: 0;
+}
+
+.checker-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  align-items: center;
+}
+
+.checker-form input,
+.checker-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-size: 1rem;
+}
+
+.btn-check {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #006400;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-check:hover {
+  background-color: #004d00;
+}
+
+.checker-results {
+  margin-top: 20px;
+}

@@ -1,0 +1,33 @@
+/* --- ADD THIS TO THE BOTTOM OF ApplicationReview.css --- */
+
+.submitted-data-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submitted-data-list li {
+  font-size: 1rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.submitted-data-list li:last-child {
+  border-bottom: none;
+}
+
+.submitted-data-list li strong {
+  display: block;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.submitted-data-list li a {
+  color: #006400;
+  font-weight: 500;
+  text-decoration: none;
+}
+.submitted-data-list li a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,49 @@
+.dashboard-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.dashboard-nav {
+  flex-basis: 220px; /* Width of the sidebar */
+  flex-shrink: 0;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.dashboard-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-nav li {
+  margin-bottom: 10px;
+}
+
+.dashboard-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dashboard-nav a:hover,
+.dashboard-nav a.active { /* You can add active class logic with NavLink */
+  background-color: #e8f5e9; /* Light green */
+  color: #006400; /* Dark green */
+}
+
+.dashboard-content {
+  flex-grow: 1; /* Takes up remaining space */
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  min-height: 400px;
+}
